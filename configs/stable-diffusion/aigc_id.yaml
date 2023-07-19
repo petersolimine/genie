@@ -26,7 +26,7 @@ model:
         placeholder_strings: ['sks', 'ks', 'ata', 'tre', 'ry', 'bop', 'rn', '&', '*', '`']
         initializer_words: ["face", "face", "face", "face", "face", "face", "face", "face", "face", "face"]
         max_ids: 10  # joint learning #ids, consistent with data.train.num_ids
-        num_embeds_per_token: 2  # consistent with cond_stage_config
+        num_embeds_per_token: 4  # consistent with cond_stage_config
         meta_mlp_depth: 1
         loss_type: 'none'
         meta_inner_dim: 512  # consistent with n_components
@@ -121,7 +121,7 @@ data:
 lightning:
   modelcheckpoint:
     params:
-      every_n_train_steps: 400
+      every_n_train_steps: 1000
   callbacks:
     image_logger:
       target: main.ImageLogger
@@ -132,4 +132,4 @@ lightning:
 
   trainer:
     benchmark: True
-    max_steps: 1600
+    max_steps: 19000

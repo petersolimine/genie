@@ -10,7 +10,7 @@ N_SAMPLES=${4:-8}  # n_samples per text (equals to batch_size), default: 8
 # ------------------------------------------------------
 
 # 2. Edit or modify the following settings as you need
-step_list=(799)  # default: (799), e.g. (99 199 299 399)
+step_list=(999 1999 2999 3999 4999 5999 6999 7999 8999 9999 10999 11999 12999 13999 14999 15999 16999 17999 18999 19999)  # default: (799), e.g. (99 199 299 399)
 eval_id1_list=(0)  # the id of the 1st person, e.g. (0 1 2 3 4)
 eval_id2_list=(1)  # the id of the 2nd person, e.g. (0 1 2 3 4)
 # ------------------------------------------------------
